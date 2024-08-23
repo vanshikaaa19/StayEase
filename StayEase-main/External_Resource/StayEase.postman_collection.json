@@ -1,0 +1,1996 @@
+{
+	"info": {
+		"_postman_id": "68a566f8-9bac-45f4-a4f5-a99135c7e4b1",
+		"name": "StayEase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11967337"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstname\": \"Ritanshu\",\n  \"lastname\": \"Singh\",\n  \"email\": \"ritanshu@gmail.com\",\n  \"password\": \"Qwerty@123\",\n  \"role\": \"CUSTOMER\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{auth}}/register",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{auth}}",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstname\": \"Sudhanshu\",\n  \"lastname\": \"Singh\",\n  \"email\": \"sudhanshu@gmail.com\",\n  \"password\": \"Qwerty@123\",\n  \"role\": \"CUSTOMER\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{auth}}/register",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{auth}}",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:40:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjEyLCJleHAiOjE3MjIwODQwMTJ9.ir0DqUYhviWIDSiKo3frhUNIN243YYNMh8v0B_gldpx-uIzHaPEolHl_H8ZxdT6j\",\n    \"refresh_token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjEyLCJleHAiOjE3MjI2MDI0MTJ9.YV1MH-_xww4pveyNBzVTjTbMTzLnta1Htllnr329fP1RblOHn_eCdzTs0iHKwYTl\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"email\": \"divyanshu@gmail.com\",\n    // \"email\": \"pushpanshu@gmail.com\",\n    // \"email\": \"priyanshu@gmail.com\",\n    \"email\": \"sudhanshu@gmail.com\",\n    \"password\": \"Qwerty@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{auth}}/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{auth}}",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    // \"email\": \"divyanshu@gmail.com\",\n    // \"email\": \"pushpanshu@gmail.com\",\n    // \"email\": \"priyanshu@gmail.com\",\n    \"email\": \"sudhanshu@gmail.com\",\n    \"password\": \"Qwerty@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{auth}}/login",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{auth}}",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:40:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjQwLCJleHAiOjE3MjIwODQwNDB9.4xP5cDcU3C5nIpYkDW6YPvG7xVQ5QZBIBrfV310B2m9FvgIg18mniHMhYyAkeltO\",\n    \"refresh_token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjQwLCJleHAiOjE3MjI2MDI0NDB9.cQEp4xKcVbwBsHmMlIw9phxOIYNfC18XRPfQ5tv2ANpxwws3d89KRb8ZFTK3YQ8u\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "Get Hotels",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{m-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{hotel}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{hotel}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Hotels",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{hotel}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{hotel}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:35:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Marriot\",\n        \"description\": \"5 Star Hotel Near Bank of River, Rishikesh UK\",\n        \"noOfRooms\": 10,\n        \"location\": {\n            \"id\": 1,\n            \"address\": \"Lakshman Jhulla, Rishikesh\",\n            \"latitude\": 0,\n            \"longitude\": 0\n        },\n        \"bookings\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Hotel By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{hotel}}/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{hotel}}",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Hotel By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{hotel}}/1",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{hotel}}",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:38:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Marriot\",\n    \"description\": \"5 Star Hotel Near Bank of River, Rishikesh\",\n    \"noOfRooms\": 10,\n    \"location\": {\n        \"id\": 1,\n        \"address\": \"Lakshman Jhulla, Rishikesh\",\n        \"latitude\": 0,\n        \"longitude\": 0\n    },\n    \"bookings\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Save Hotel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{a-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Redison\",\n    \"description\": \"A 5 Star  Luxary Stays, Hyderabad\",\n    \"noOfRooms\": 3,\n    \"address\": \"Gachibowli\",\n    \"latitude\": 0,\n    \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{hotel}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{hotel}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Save Hotel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"The Lalit Hotel\",\n    \"description\": \"5 Star Hotel Near Bank of River, Delhi\",\n    \"noOfRooms\": 10,\n    \"address\": \"Cannought Palace\",\n    \"latitude\": 0,\n    \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{hotel}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{hotel}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:38:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"The Lalit Hotel\",\n    \"description\": \"5 Star Hotel Near Bank of River, Delhi\",\n    \"noOfRooms\": 10,\n    \"location\": {\n        \"id\": 2,\n        \"address\": \"Cannought Palace\",\n        \"latitude\": 0,\n        \"longitude\": 0\n    },\n    \"bookings\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Hotel",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"name\": \"Marriot\",\n    \"description\": \"5 Star Hotel Near Bank of River, New Delhi\"\n    // \"noOfRooms\": 10,\n    // \"address\": \"Lakshman Jhulla, Rishikesh\",\n    // \"latitude\": 0.0,\n    // \"longitude\": 0.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{hotel}}/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{hotel}}",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Hotel",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    // \"name\": \"Marriot\",\n    \"description\": \"5 Star Hotel Near Bank of River, New Delhi\"\n    // \"noOfRooms\": 10,\n    // \"address\": \"Lakshman Jhulla, Rishikesh\",\n    // \"latitude\": 0.0,\n    // \"longitude\": 0.0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{hotel}}/2",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{hotel}}",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:39:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"The Lalit Hotel\",\n    \"description\": \"5 Star Hotel Near Bank of River, New Delhi\",\n    \"noOfRooms\": 10,\n    \"location\": {\n        \"id\": 2,\n        \"address\": \"Cannought Palace\",\n        \"latitude\": 0,\n        \"longitude\": 0\n    },\n    \"bookings\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Hotel By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{hotel}}/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{hotel}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{a-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{user}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{user}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{user}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{user}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:42:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"firstname\": \"Sudhanshu\",\n        \"lastname\": \"Singh\",\n        \"email\": \"sudhanshu@gmail.com\",\n        \"password\": \"$2a$10$ZfpawPr5mOuTSX/VOB.z7O/34cifO2ANP86FTaiJTAL4TlaK4M3pS\",\n        \"role\": \"CUSTOMER\",\n        \"tokens\": [\n            {\n                \"id\": 1,\n                \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjEyLCJleHAiOjE3MjIwODQwMTJ9.ir0DqUYhviWIDSiKo3frhUNIN243YYNMh8v0B_gldpx-uIzHaPEolHl_H8ZxdT6j\",\n                \"tokenType\": \"BEARER\",\n                \"revoked\": true,\n                \"expired\": true\n            },\n            {\n                \"id\": 2,\n                \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjQwLCJleHAiOjE3MjIwODQwNDB9.4xP5cDcU3C5nIpYkDW6YPvG7xVQ5QZBIBrfV310B2m9FvgIg18mniHMhYyAkeltO\",\n                \"tokenType\": \"BEARER\",\n                \"revoked\": false,\n                \"expired\": false\n            }\n        ],\n        \"bookings\": [],\n        \"enabled\": true,\n        \"credentialsNonExpired\": true,\n        \"username\": \"sudhanshu@gmail.com\",\n        \"authorities\": [\n            {\n                \"authority\": \"customer:delete\"\n            },\n            {\n                \"authority\": \"customer:read\"\n            },\n            {\n                \"authority\": \"customer:create\"\n            },\n            {\n                \"authority\": \"customer:update\"\n            },\n            {\n                \"authority\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true\n    },\n    {\n        \"id\": 2,\n        \"firstname\": \"Pushpanshu\",\n        \"lastname\": \"Singh\",\n        \"email\": \"pushpanshu@gmail.com\",\n        \"password\": \"$2a$10$rO57K2/.ZUBVDsrPRX/GXuOPqZEN04z3dPdfjAwjQwoSOh6p.K3LC\",\n        \"role\": \"ADMIN\",\n        \"tokens\": [\n            {\n                \"id\": 3,\n                \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJwdXNocGFuc2h1QGdtYWlsLmNvbSIsImlhdCI6MTcyMTk5NzcwNiwiZXhwIjoxNzIyMDg0MTA2fQ.FMdh0MhmLxMhIPN2YiX4pKLSJEL_nJTjytvWzsgDtFnD_MTyYbT5qM3xXdbKVAKj\",\n                \"tokenType\": \"BEARER\",\n                \"revoked\": false,\n                \"expired\": false\n            }\n        ],\n        \"bookings\": [],\n        \"enabled\": true,\n        \"credentialsNonExpired\": true,\n        \"username\": \"pushpanshu@gmail.com\",\n        \"authorities\": [\n            {\n                \"authority\": \"admin:read\"\n            },\n            {\n                \"authority\": \"management:delete\"\n            },\n            {\n                \"authority\": \"management:create\"\n            },\n            {\n                \"authority\": \"management:read\"\n            },\n            {\n                \"authority\": \"admin:delete\"\n            },\n            {\n                \"authority\": \"admin:create\"\n            },\n            {\n                \"authority\": \"customer:create\"\n            },\n            {\n                \"authority\": \"management:update\"\n            },\n            {\n                \"authority\": \"customer:update\"\n            },\n            {\n                \"authority\": \"customer:delete\"\n            },\n            {\n                \"authority\": \"admin:update\"\n            },\n            {\n                \"authority\": \"customer:read\"\n            },\n            {\n                \"authority\": \"ROLE_ADMIN\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true\n    },\n    {\n        \"id\": 3,\n        \"firstname\": \"Divyanshu\",\n        \"lastname\": \"Singh\",\n        \"email\": \"divyanshu@gmail.com\",\n        \"password\": \"$2a$10$NQvTUCtwD9LqIQSP/1xA6.DIPlFdxm9FJrRE0aEFvavtv8xK6OESi\",\n        \"role\": \"MANAGER\",\n        \"tokens\": [\n            {\n                \"id\": 4,\n                \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJkaXZ5YW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NzIxLCJleHAiOjE3MjIwODQxMjF9.i6vG2c24tw_hNM8X5TyhSjLo2nQlSKSG4YoE2lUzy9c-IiJwEaNRhJy0i02SKO0s\",\n                \"tokenType\": \"BEARER\",\n                \"revoked\": false,\n                \"expired\": false\n            }\n        ],\n        \"bookings\": [],\n        \"enabled\": true,\n        \"credentialsNonExpired\": true,\n        \"username\": \"divyanshu@gmail.com\",\n        \"authorities\": [\n            {\n                \"authority\": \"management:create\"\n            },\n            {\n                \"authority\": \"management:delete\"\n            },\n            {\n                \"authority\": \"management:read\"\n            },\n            {\n                \"authority\": \"management:update\"\n            },\n            {\n                \"authority\": \"ROLE_MANAGER\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true\n    },\n    {\n        \"id\": 4,\n        \"firstname\": \"Priyanshu\",\n        \"lastname\": \"Singh\",\n        \"email\": \"priyanshu@gmail.com\",\n        \"password\": \"$2a$10$OflGNCOPBlz15lb7IxzkuukE3Sl9jX4bOisOw/EF/2o5Hwp8nAe1K\",\n        \"role\": \"CUSTOMER\",\n        \"tokens\": [\n            {\n                \"id\": 5,\n                \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJwcml5YW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NzQzLCJleHAiOjE3MjIwODQxNDN9.iREfkfHN0UopDC0xq0OtW6V3rnaKFjutP3zpzki39qn1JKFT6hZ0Qehs6nmMwDHp\",\n                \"tokenType\": \"BEARER\",\n                \"revoked\": false,\n                \"expired\": false\n            }\n        ],\n        \"bookings\": [],\n        \"enabled\": true,\n        \"credentialsNonExpired\": true,\n        \"username\": \"priyanshu@gmail.com\",\n        \"authorities\": [\n            {\n                \"authority\": \"customer:delete\"\n            },\n            {\n                \"authority\": \"customer:read\"\n            },\n            {\n                \"authority\": \"customer:create\"\n            },\n            {\n                \"authority\": \"customer:update\"\n            },\n            {\n                \"authority\": \"ROLE_CUSTOMER\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get User By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{user}}/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{user}}",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User By ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{user}}/1",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{user}}",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 12:42:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"firstname\": \"Sudhanshu\",\n    \"lastname\": \"Singh\",\n    \"email\": \"sudhanshu@gmail.com\",\n    \"password\": \"$2a$10$ZfpawPr5mOuTSX/VOB.z7O/34cifO2ANP86FTaiJTAL4TlaK4M3pS\",\n    \"role\": \"CUSTOMER\",\n    \"tokens\": [\n        {\n            \"id\": 1,\n            \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjEyLCJleHAiOjE3MjIwODQwMTJ9.ir0DqUYhviWIDSiKo3frhUNIN243YYNMh8v0B_gldpx-uIzHaPEolHl_H8ZxdT6j\",\n            \"tokenType\": \"BEARER\",\n            \"revoked\": true,\n            \"expired\": true\n        },\n        {\n            \"id\": 2,\n            \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NjQwLCJleHAiOjE3MjIwODQwNDB9.4xP5cDcU3C5nIpYkDW6YPvG7xVQ5QZBIBrfV310B2m9FvgIg18mniHMhYyAkeltO\",\n            \"tokenType\": \"BEARER\",\n            \"revoked\": false,\n            \"expired\": false\n        }\n    ],\n    \"bookings\": [],\n    \"enabled\": true,\n    \"credentialsNonExpired\": true,\n    \"username\": \"sudhanshu@gmail.com\",\n    \"authorities\": [\n        {\n            \"authority\": \"customer:delete\"\n        },\n        {\n            \"authority\": \"customer:read\"\n        },\n        {\n            \"authority\": \"customer:create\"\n        },\n        {\n            \"authority\": \"customer:update\"\n        },\n        {\n            \"authority\": \"ROLE_CUSTOMER\"\n        }\n    ],\n    \"accountNonExpired\": true,\n    \"accountNonLocked\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "About me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{user}}/me",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{user}}",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Available Rooms as Per Requirement",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}/available-rooms?room=1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}",
+								"available-rooms"
+							],
+							"query": [
+								{
+									"key": "room",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Available Rooms as Per Requirement",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}?room=1",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}"
+									],
+									"query": [
+										{
+											"key": "room",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 13:01:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Marriot\",\n        \"description\": \"5 Star Hotel Near Bank of River, Rishikesh\",\n        \"noOfRooms\": 10,\n        \"location\": {\n            \"id\": 1,\n            \"address\": \"Lakshman Jhulla, Rishikesh\",\n            \"latitude\": 0,\n            \"longitude\": 0\n        },\n        \"bookings\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"The Lalit Hotel\",\n        \"description\": \"5 Star Hotel Near Bank of River, New Delhi\",\n        \"noOfRooms\": 10,\n        \"location\": {\n            \"id\": 2,\n            \"address\": \"Cannought Palace\",\n            \"latitude\": 0,\n            \"longitude\": 0\n        },\n        \"bookings\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Book Hotel Room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"hotelID\": 152\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Book Hotel Room",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"hotelID\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 18:18:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"status\": \"BOOKED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{a-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Booking",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 18:45:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"status\": \"BOOKED\"\n    },\n    {\n        \"id\": 2,\n        \"status\": \"BOOKED\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete Booking By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{a-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Booking By ID",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}/1",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 19:10:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update Booking Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"CANCELLED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Booking Status",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"CANCELLED\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}/1",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 18:47:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"status\": \"CANCELLED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Cancel Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}/1/cancel",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}",
+								"1",
+								"cancel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cancel Booking",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}/1/cancel",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}",
+										"1",
+										"cancel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 18:53:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"status\": \"CANCELLED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Booking By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Booking By ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 18:57:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"status\": \"CANCELLED\"\n    },\n    {\n        \"id\": 2,\n        \"status\": \"BOOKED\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Search Booking By Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{c-token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}:{{port}}/{{booking}}/status?status=CANCELLED",
+							"host": [
+								"{{localhost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"{{booking}}",
+								"status"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "CANCELLED"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search Booking By Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}:{{port}}/{{booking}}/status?status=CANCELLED",
+									"host": [
+										"{{localhost}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"{{booking}}",
+										"status"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "CANCELLED"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 19:08:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"status\": \"CANCELLED\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://127.0.0.1",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "8080",
+			"type": "string"
+		},
+		{
+			"key": "hotel",
+			"value": "hotels",
+			"type": "string"
+		},
+		{
+			"key": "booking",
+			"value": "bookings",
+			"type": "string"
+		},
+		{
+			"key": "user",
+			"value": "users",
+			"type": "string"
+		},
+		{
+			"key": "auth",
+			"value": "api/v1/auth",
+			"type": "string"
+		},
+		{
+			"key": "c-token",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWRoYW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIyMDE1NzQ1LCJleHAiOjE3MjIxMDIxNDV9.jJqMDbC1a5AGxnauLwBJAa9ijxdla81CWr6HoovipkQ",
+			"type": "string"
+		},
+		{
+			"key": "a-token",
+			"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJwdXNocGFuc2h1QGdtYWlsLmNvbSIsImlhdCI6MTcyMTk5NzcwNiwiZXhwIjoxNzIyMDg0MTA2fQ.FMdh0MhmLxMhIPN2YiX4pKLSJEL_nJTjytvWzsgDtFnD_MTyYbT5qM3xXdbKVAKj",
+			"type": "string"
+		},
+		{
+			"key": "m-token",
+			"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJkaXZ5YW5zaHVAZ21haWwuY29tIiwiaWF0IjoxNzIxOTk3NzIxLCJleHAiOjE3MjIwODQxMjF9.i6vG2c24tw_hNM8X5TyhSjLo2nQlSKSG4YoE2lUzy9c-IiJwEaNRhJy0i02SKO0s",
+			"type": "string"
+		}
+	]
+}
